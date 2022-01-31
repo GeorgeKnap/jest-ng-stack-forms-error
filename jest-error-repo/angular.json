@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "fooapp": "apps/fooapp",
+    "fooapp-e2e": "apps/fooapp-e2e",
+    "test-this-lib": "libs/test-this-lib"
+  }
+}

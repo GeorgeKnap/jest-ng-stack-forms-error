@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/test-this-lib",
+  "sourceRoot": "libs/test-this-lib/src",
+  "prefix": "jest-error-repo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/test-this-lib"],
+      "options": {
+        "jestConfig": "libs/test-this-lib/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/test-this-lib/src/**/*.ts",
+          "libs/test-this-lib/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
