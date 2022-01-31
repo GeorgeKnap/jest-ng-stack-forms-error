@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormControl } from '@ng-stack/forms';
 
 @Component({
   selector: 'jest-error-repo-test-this-component',
   templateUrl: './test-this-component.component.html',
-  styleUrls: ['./test-this-component.component.css']
+  styleUrls: ['./test-this-component.component.css'],
 })
-export class TestThisComponentComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class TestThisComponentComponent {
+  control = new FormControl<string>('init value');
 }
