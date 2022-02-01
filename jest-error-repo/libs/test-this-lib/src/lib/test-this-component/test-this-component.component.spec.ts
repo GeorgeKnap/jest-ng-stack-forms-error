@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NgStackFormsModule } from '@ng-stack/forms';
 import { TestThisComponentComponent } from './test-this-component.component';
 
 describe('TestThisComponentComponent', () => {
@@ -8,9 +8,9 @@ describe('TestThisComponentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TestThisComponentComponent ]
-    })
-    .compileComponents();
+      imports: [NgStackFormsModule],
+      declarations: [TestThisComponentComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
